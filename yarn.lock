@@ -840,6 +840,13 @@
     "@tanstack/store" "0.5.5"
     use-sync-external-store "^1.2.2"
 
+"@tanstack/react-table@^8.20.1":
+  version "8.20.1"
+  resolved "https://registry.yarnpkg.com/@tanstack/react-table/-/react-table-8.20.1.tgz#bd2d549d8a18458fb8284025ce66a9b86176fa6b"
+  integrity sha512-PJK+07qbengObe5l7c8vCdtefXm8cyR4i078acWrHbdm8JKw1ES7YpmOtVt9ALUVEEFAHscdVpGRhRgikgFMbQ==
+  dependencies:
+    "@tanstack/table-core" "8.20.1"
+
 "@tanstack/router-cli@^1.47.0":
   version "1.47.0"
   resolved "https://registry.yarnpkg.com/@tanstack/router-cli/-/router-cli-1.47.0.tgz#719c771d6072d58cca12c21053d439932ee139e5"
@@ -884,6 +891,11 @@
   version "0.5.5"
   resolved "https://registry.yarnpkg.com/@tanstack/store/-/store-0.5.5.tgz#84d78568c4a71c885cb15754bf51eca42a776efe"
   integrity sha512-EOSrgdDAJExbvRZEQ/Xhh9iZchXpMN+ga1Bnk8Nmygzs8TfiE6hbzThF+Pr2G19uHL6+DTDTHhJ8VQiOd7l4tA==
+
+"@tanstack/table-core@8.20.1":
+  version "8.20.1"
+  resolved "https://registry.yarnpkg.com/@tanstack/table-core/-/table-core-8.20.1.tgz#74bfab10fa35bed51fa0bd2f3539a331d7e78f1b"
+  integrity sha512-5Ly5TIRHnWH7vSDell9B/OVyV380qqIJVg7H7R7jU4fPEmOD4smqAX7VRflpYI09srWR8aj5OLD2Ccs1pI5mTg==
 
 "@testing-library/dom@^10.4.0":
   version "10.4.0"
@@ -3598,6 +3610,11 @@ react-error-boundary@^3.1.0:
   integrity sha512-uM9uPzZJTF6wRQORmSrvOIgt4lJ9MC1sNgEOj2XGsDTRE4kmpWxg7ENK9EWNKJRMAOY9z0MuF4yIfl6gp4sotA==
   dependencies:
     "@babel/runtime" "^7.12.5"
+
+react-hook-form@^7.52.2:
+  version "7.52.2"
+  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.52.2.tgz#ff40f4776250b86ddfcde6be68d34aa82b1c60fe"
+  integrity sha512-pqfPEbERnxxiNMPd0bzmt1tuaPcVccywFDpyk2uV5xCIBphHV5T8SVnX9/o3kplPE1zzKt77+YIoq+EMwJp56A==
 
 react-i18next@^15.0.1:
   version "15.0.1"
