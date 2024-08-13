@@ -20,10 +20,10 @@
     "prepare": "husky"
   },
   "lint-staged": {
-    "*.{js,ts,tsx}": [
+    "*.{ts,tsx}": [
       "yarn run format",
       "yarn run lint",
-      "yarn run typecheck"
+      "bash -c tsc --project tsconfig.json --noEmit"
     ]
   },
   "dependencies": {

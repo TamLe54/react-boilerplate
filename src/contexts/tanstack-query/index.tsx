@@ -34,7 +34,6 @@ const mockQueryClient = new QueryClient({
  * @returns
  */
 export const mockQueryWrapper = () => {
-  // eslint-disable-next-line react/display-name
   return ({ children }: { children: ReactNode }) => (
     <QueryClientProvider client={mockQueryClient}>{children}</QueryClientProvider>
   );

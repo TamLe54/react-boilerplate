@@ -1,6 +1,7 @@
-import { Loading } from '@/components';
 import { createFileRoute, ErrorComponent, useNavigate } from '@tanstack/react-router';
 import { useEffect } from 'react';
+
+import { Loading } from '@/components';
 
 const IndexComponent = () => {
   const navigate = useNavigate();

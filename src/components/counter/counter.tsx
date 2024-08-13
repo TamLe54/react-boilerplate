@@ -1,5 +1,6 @@
-import { useCounterStore } from '@/contexts/counter';
 import { t } from 'i18next';
+
+import { useCounterStore } from '@/contexts/counter';
 
 export const Counter = () => {
   const { count, inc } = useCounterStore();

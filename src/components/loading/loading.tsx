@@ -1,5 +1,6 @@
-import { cn, getGlobalCssVariable } from '@/utils/styles';
 import './loading-screen.scss';
+
+import { cn, getGlobalCssVariable } from '@/utils/styles';
 
 type LoadingProps = {
   size?: number | string;

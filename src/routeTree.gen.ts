@@ -10,53 +10,53 @@
 
 // Import Routes
 
-import { Route as rootRoute } from './routes/__root'
-import { Route as AuthenticatedRouteImport } from './routes/_authenticated.route'
-import { Route as IndexImport } from './routes/index'
-import { Route as AuthenticatedWelcomeImport } from './routes/_authenticated/welcome'
+import { Route as rootRoute } from './routes/__root';
+import { Route as AuthenticatedRouteImport } from './routes/_authenticated.route';
+import { Route as IndexImport } from './routes/index';
+import { Route as AuthenticatedWelcomeImport } from './routes/_authenticated/welcome';
 
 // Create/Update Routes
 
 const AuthenticatedRouteRoute = AuthenticatedRouteImport.update({
   id: '/_authenticated',
   getParentRoute: () => rootRoute,
-} as any)
+} as any);
 
 const IndexRoute = IndexImport.update({
   path: '/',
   getParentRoute: () => rootRoute,
-} as any)
+} as any);
 
 const AuthenticatedWelcomeRoute = AuthenticatedWelcomeImport.update({
   path: '/welcome',
   getParentRoute: () => AuthenticatedRouteRoute,
-} as any)
+} as any);
 
 // Populate the FileRoutesByPath interface
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
     '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexImport
-      parentRoute: typeof rootRoute
-    }
+      id: '/';
+      path: '/';
+      fullPath: '/';
+      preLoaderRoute: typeof IndexImport;
+      parentRoute: typeof rootRoute;
+    };
     '/_authenticated': {
-      id: '/_authenticated'
-      path: ''
-      fullPath: ''
-      preLoaderRoute: typeof AuthenticatedRouteImport
-      parentRoute: typeof rootRoute
-    }
+      id: '/_authenticated';
+      path: '';
+      fullPath: '';
+      preLoaderRoute: typeof AuthenticatedRouteImport;
+      parentRoute: typeof rootRoute;
+    };
     '/_authenticated/welcome': {
-      id: '/_authenticated/welcome'
-      path: '/welcome'
-      fullPath: '/welcome'
-      preLoaderRoute: typeof AuthenticatedWelcomeImport
-      parentRoute: typeof AuthenticatedRouteImport
-    }
+      id: '/_authenticated/welcome';
+      path: '/welcome';
+      fullPath: '/welcome';
+      preLoaderRoute: typeof AuthenticatedWelcomeImport;
+      parentRoute: typeof AuthenticatedRouteImport;
+    };
   }
 }
 
@@ -67,7 +67,7 @@ export const routeTree = rootRoute.addChildren({
   AuthenticatedRouteRoute: AuthenticatedRouteRoute.addChildren({
     AuthenticatedWelcomeRoute,
   }),
-})
+});
 
 /* prettier-ignore-end */
 

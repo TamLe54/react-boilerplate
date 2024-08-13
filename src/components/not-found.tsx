@@ -1,5 +1,3 @@
-/* eslint-disable react-refresh/only-export-components */
-
 import { useEffect } from 'react';
 
 import NotFoundImage from '@/assets/undraw_page_not_found_re_e9o6.svg';

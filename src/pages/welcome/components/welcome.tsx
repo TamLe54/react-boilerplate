@@ -1,5 +1,9 @@
 import { Counter } from '@/components';
 
 export const WelcomePage = () => {
-  return <Counter />;
+  return (
+    <div className="">
+      <Counter />
+    </div>
+  );
 };

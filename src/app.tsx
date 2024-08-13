@@ -3,6 +3,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import NiceModal from '@ebay/nice-modal-react';
 import { ReactNode } from 'react';
 import { ToastContainer } from 'react-toastify';
+
 import { TanstackQueryWrapper } from './contexts/tanstack-query';
 
 export const AppInit = ({ children }: { children: ReactNode }) => {

@@ -1,15 +1,15 @@
-import 'i18next'
+import 'i18next';
 
-import en from './locales/en.json'
-import vi from './locales/vi.json'
+import en from './locales/en.json';
+import vi from './locales/vi.json';
 
 declare module 'i18next' {
   interface CustomTypeOptions {
-    defaultNS: 'en'
+    defaultNS: 'en';
 
     resources: {
-      en: typeof en
-      vi: typeof vi
-    }
+      en: typeof en;
+      vi: typeof vi;
+    };
   }
 }
