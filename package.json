@@ -1,20 +1,25 @@
 {
+  "name": "react-boilerplate",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port=3000",
+    "build": "yarn clean-dist && tsc && vite build",
+    "lint": "eslint src --max-warnings=0",
+    "format": "prettier src --write",
+    "serve": "vite preview",
+    "preview": "vite preview",
+    "clean-dist": "rimraf dist/",
+    "clean-node": "rimraf node_modules/",
+    "routes": "tsr watch"
+  },
   "lint-staged": {
     "*.{js,ts,tsx}": [
       "yarn run format",
       "yarn run lint",
       "yarn run typecheck"
     ]
-  },
-  "name": "react-boilerplate",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.51.23",
@@ -41,6 +46,7 @@
     "eslint-plugin-tailwindcss": "^3.17.4",
     "globals": "^15.9.0",
     "postcss": "^8.4.41",
+    "rimraf": "^6.0.1",
     "tailwindcss": "^3.4.9",
     "tailwindcss-animate": "^1.0.7",
     "typescript": "^5.5.3",
