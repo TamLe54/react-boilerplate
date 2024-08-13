@@ -1,3 +1,4 @@
+import './i18n/i18n';
 import './styles/index.css';
 
 import { createRouter, RouterProvider } from '@tanstack/react-router';
