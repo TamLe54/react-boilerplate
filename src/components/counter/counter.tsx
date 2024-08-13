@@ -2,6 +2,8 @@ import { t } from 'i18next';
 
 import { useCounterStore } from '@/contexts/counter';
 
+import { Button } from '../ui';
+
 export const Counter = () => {
   const { count, inc } = useCounterStore();
 
@@ -9,7 +11,9 @@ export const Counter = () => {
     <div>
       <h2>{t('components.counter.title')}</h2>
       <h4>{count}</h4>
-      <button onClick={inc}>{t('components.counter.up_button')}</button>
+      <Button onClick={inc} className="text-xl text-white">
+        {t('components.counter.up_button')}
+      </Button>
     </div>
   );
 };
