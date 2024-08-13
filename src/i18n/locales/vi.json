@@ -1,0 +1,8 @@
+{
+  "components": {
+    "counter": {
+      "title": "Cửa hàng quầy",
+      "up_button": "một lên"
+    }
+  }
+}
