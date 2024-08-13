@@ -1,7 +1,7 @@
-import { cn, getGlobalCssVariable } from '@utils/styles';
+import { cn, getGlobalCssVariable } from '@/utils/styles';
 import './loading-screen.scss';
 
-type LoadingScreenProps = {
+type LoadingProps = {
   size?: number | string;
   strokeWidth?: number | string;
   color?: string;
@@ -10,14 +10,14 @@ type LoadingScreenProps = {
   className?: string;
 };
 
-export const LoadingScreen = ({
+export const Loading = ({
   size = 150,
   strokeWidth = '3px',
   color = getGlobalCssVariable('--primary'),
   bgOpacity = 0,
   speedInSecond = 2,
   className,
-}: LoadingScreenProps) => {
+}: LoadingProps) => {
   return (
     <div className={cn('flex min-h-[50vh] items-center justify-center', className)}>
       <svg
