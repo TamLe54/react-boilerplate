@@ -24,7 +24,11 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
-    }
+    },
+
+    /* Testing */
+    "types": ["vite/client", "vitest/globals", "@testing-library/jest-dom"]
   },
-  "include": ["src", "svg.d.ts"]
+  "include": ["src", "svg.d.ts"],
+  "exclude": ["node_modules"]
 }

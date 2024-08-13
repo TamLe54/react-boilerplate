@@ -13,7 +13,10 @@
     "clean-dist": "rimraf dist/",
     "clean-node": "rimraf node_modules/",
     "routes": "tsr watch",
-    "generate-route": "tsr generate"
+    "generate-route": "tsr generate",
+    "test": "cross-env NODE_ENV=test vitest",
+    "test:ui": "cross-env NODE_ENV=test vitest --ui --coverage.enabled=true",
+    "coverage": "cross-env NODE_ENV=test vitest --coverage.enabled=true"
   },
   "lint-staged": {
     "*.{js,ts,tsx}": [
@@ -27,8 +30,12 @@
     "@tanstack/react-query": "^5.51.23",
     "@tanstack/react-router": "^1.47.1",
     "@types/node": "^22.2.0",
+    "@vitest/coverage-istanbul": "^2.0.5",
+    "@vitest/ui": "^2.0.5",
     "axios": "^1.7.3",
     "clsx": "^2.1.1",
+    "happy-dom": "^14.12.3",
+    "nock": "^13.5.4",
     "prettier": "^3.3.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -39,10 +46,14 @@
     "@tanstack/react-query-devtools": "^5.51.23",
     "@tanstack/router-cli": "^1.47.0",
     "@tanstack/router-plugin": "^1.47.0",
+    "@testing-library/jest-dom": "^6.4.8",
+    "@testing-library/react": "^16.0.0",
+    "@testing-library/react-hooks": "^8.0.1",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react-swc": "^3.5.0",
     "autoprefixer": "^10.4.20",
+    "cross-env": "^7.0.3",
     "eslint": "^9.8.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
@@ -60,6 +71,7 @@
     "tailwindcss-animate": "^1.0.7",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.0",
-    "vite": "^5.4.0"
+    "vite": "^5.4.0",
+    "vitest": "^2.0.5"
   }
 }
