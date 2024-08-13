@@ -16,7 +16,8 @@
     "generate-route": "tsr generate",
     "test": "cross-env NODE_ENV=test vitest",
     "test:ui": "cross-env NODE_ENV=test vitest --ui --coverage.enabled=true",
-    "coverage": "cross-env NODE_ENV=test vitest --coverage.enabled=true"
+    "coverage": "cross-env NODE_ENV=test vitest --coverage.enabled=true",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.{js,ts,tsx}": [
@@ -43,6 +44,8 @@
     "zustand": "^4.5.4"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.4.0",
+    "@commitlint/config-conventional": "^19.2.2",
     "@eslint/js": "^9.8.0",
     "@tanstack/react-query-devtools": "^5.51.23",
     "@tanstack/router-cli": "^1.47.0",
@@ -66,6 +69,7 @@
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "eslint-plugin-tailwindcss": "^3.17.4",
     "globals": "^15.9.0",
+    "husky": "^9.1.4",
     "postcss": "^8.4.41",
     "rimraf": "^6.0.1",
     "sass-embedded": "^1.77.8",
