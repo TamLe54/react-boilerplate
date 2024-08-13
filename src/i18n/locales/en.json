@@ -1,0 +1,8 @@
+{
+  "components": {
+    "counter": {
+      "title": "Counter Store",
+      "up_button": "One Up"
+    }
+  }
+}
