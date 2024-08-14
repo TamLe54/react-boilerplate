@@ -10,7 +10,7 @@ interface ToolLogoProps {
 
 export const ToolLogo = ({ logoName, logoSrc, logoUrl }: ToolLogoProps) => {
   return (
-    <Link to={logoUrl} className="select-none hover:scale-110 ">
+    <Link to={logoUrl} target="_blank" className="select-none hover:scale-110 ">
       <TooltipProvider>
         <Tooltip delayDuration={200}>
           <TooltipTrigger>

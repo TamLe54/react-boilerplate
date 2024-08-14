@@ -10,8 +10,8 @@ import ZustandLogo from '@/assets/logos/zustand.svg';
 import ReactLogo from '@/assets/react.svg';
 import { ResizableHandle, ResizablePanel, ResizablePanelGroup } from '@/components/ui/resizable';
 
-import { CounterExample } from './counter-example';
 import { FormExample } from './form-example';
+import { ModalExample } from './modal-example';
 import { TableExample } from './table-example';
 import { ToolLogo } from './tools-logo';
 
@@ -41,7 +41,7 @@ export const WelcomePage = () => {
           />
         </div>
       </div>
-      <div className="flex h-[350px] w-full justify-center">
+      <div className="flex h-[500px] w-full justify-center">
         <ResizablePanelGroup direction="horizontal" className="max-w-full rounded-lg">
           <ResizablePanel defaultSize={50}>
             <TableExample />
@@ -49,11 +49,11 @@ export const WelcomePage = () => {
           <ResizableHandle />
           <ResizablePanel defaultSize={50}>
             <ResizablePanelGroup direction="vertical">
-              <ResizablePanel defaultSize={25}>
-                <CounterExample />
+              <ResizablePanel defaultSize={40}>
+                <ModalExample />
               </ResizablePanel>
               <ResizableHandle />
-              <ResizablePanel defaultSize={75}>
+              <ResizablePanel defaultSize={60}>
                 <FormExample />
               </ResizablePanel>
             </ResizablePanelGroup>

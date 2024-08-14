@@ -7,7 +7,14 @@
   },
   "pages": {
     "welcome": {
-      "title": "Techsoft Reactjs Boilerplate"
+      "title": "Techsoft Reactjs Boilerplate",
+      "modal_example": {
+        "confirm_modal": {
+          "title": "Confirm Modal",
+          "description": "Are you sure want to continue?",
+          "subtitle": "This is a confirm modal"
+        }
+      }
     }
   },
   "common": {
@@ -33,6 +40,13 @@
       "zustand": {
         "name": "zustand"
       }
-    }
+    },
+    "": {
+      "ok": "OK"
+    },
+    "cancel": "Cancel",
+    "ok": "OK",
+    "yes": "Yes",
+    "no": "No"
   }
 }
