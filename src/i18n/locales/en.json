@@ -4,5 +4,35 @@
       "title": "Counter Store",
       "up_button": "One Up"
     }
+  },
+  "pages": {
+    "welcome": {
+      "title": "Techsoft Reactjs Boilerplate"
+    }
+  },
+  "common": {
+    "tools": {
+      "vite": {
+        "name": "vite"
+      },
+      "vitest": {
+        "name": "vitest"
+      },
+      "tanstack": {
+        "name": "tanstack"
+      },
+      "reactjs": {
+        "name": "reactjs"
+      },
+      "shadcn": {
+        "name": "shadcn/ui"
+      },
+      "tailwindcss": {
+        "name": "tailwindcss"
+      },
+      "zustand": {
+        "name": "zustand"
+      }
+    }
   }
 }
