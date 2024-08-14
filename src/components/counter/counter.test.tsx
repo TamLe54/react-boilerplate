@@ -8,7 +8,8 @@ describe('Counter', () => {
     renderCounter();
 
     expect(await screen.findByText(/^1$/)).toBeInTheDocument();
-    expect(await screen.findByRole('button', { name: /one up/i })).toBeInTheDocument();
+
+    expect(await screen.findByTestId('one-up-button')).toBeInTheDocument();
   });
 
   test('should increase count by clicking a button', async () => {
@@ -19,7 +20,7 @@ describe('Counter', () => {
     expect(await screen.findByText(/^1$/)).toBeInTheDocument();
 
     await act(async () => {
-      await user.click(await screen.findByRole('button', { name: /one up/i }));
+      await user.click(await screen.findByTestId('one-up-button'));
     });
 
     expect(await screen.findByText(/^2$/)).toBeInTheDocument();
