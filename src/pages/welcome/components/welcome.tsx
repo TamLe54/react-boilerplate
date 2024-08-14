@@ -1,6 +1,8 @@
 import { t } from 'i18next';
 
 import TechsoftLogo from '/techsoft.ico';
+import LucideLogo from '@/assets/logos/lucide.svg';
+import ReactHookFormLogo from '@/assets/logos/react-hook-form.svg';
 import ShadcnLogo from '@/assets/logos/shadcn.png';
 import TailwindCssLogo from '@/assets/logos/tailwindcss.svg';
 import TanstackLogo from '@/assets/logos/tanstack.png';
@@ -27,7 +29,13 @@ export const WelcomePage = () => {
           <ToolLogo logoName={t('common.tools.vite.name')} logoSrc={ViteLogo} logoUrl="https://vitejs.dev/" />
           <ToolLogo logoName={t('common.tools.vitest.name')} logoSrc={VitestLogo} logoUrl="https://vitest.dev/" />
           <ToolLogo logoName={t('common.tools.tanstack.name')} logoSrc={TanstackLogo} logoUrl="https://tanstack.com/" />
+          <ToolLogo
+            logoName={t('common.tools.react-hook-form.name')}
+            logoSrc={ReactHookFormLogo}
+            logoUrl="https://www.react-hook-form.com/"
+          />
           <ToolLogo logoName={t('common.tools.reactjs.name')} logoSrc={ReactLogo} logoUrl="https://react.dev/" />
+          <ToolLogo logoName={t('common.tools.lucide.name')} logoSrc={LucideLogo} logoUrl="https://lucide.dev/icons/" />
           <ToolLogo logoName={t('common.tools.shadcn.name')} logoSrc={ShadcnLogo} logoUrl="https://ui.shadcn.com/" />
           <ToolLogo
             logoName={t('common.tools.tailwindcss.name')}

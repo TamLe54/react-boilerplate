@@ -39,6 +39,12 @@
       },
       "zustand": {
         "name": "zustand"
+      },
+      "react-hook-form": {
+        "name": "react-hook-form"
+      },
+      "lucide": {
+        "name": "lucide"
       }
     },
     "": {
