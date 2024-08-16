@@ -3,7 +3,7 @@ import { t } from 'i18next';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 
 import { ConfirmModal } from '@/components/modals/confirm-modal';
-import { Button } from '@/components/ui';
+import { Button } from '@/components/ui/button';
 import { useCounterStore } from '@/contexts/counter';
 
 export const ModalExample = () => {

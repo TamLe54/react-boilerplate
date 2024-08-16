@@ -10,7 +10,6 @@ import ViteLogo from '@/assets/logos/vite.svg';
 import VitestLogo from '@/assets/logos/vitest.png';
 import ZustandLogo from '@/assets/logos/zustand.svg';
 import ReactLogo from '@/assets/react.svg';
-import { ResizableHandle, ResizablePanel, ResizablePanelGroup } from '@/components/ui/resizable';
 
 import { FormExample } from './form-example';
 import { ModalExample } from './modal-example';
@@ -49,24 +48,18 @@ export const WelcomePage = () => {
           />
         </div>
       </div>
-      <div className="flex h-[500px] w-full justify-center">
-        <ResizablePanelGroup direction="horizontal" className="max-w-full rounded-lg">
-          <ResizablePanel defaultSize={50}>
-            <TableExample />
-          </ResizablePanel>
-          <ResizableHandle />
-          <ResizablePanel defaultSize={50}>
-            <ResizablePanelGroup direction="vertical">
-              <ResizablePanel defaultSize={40}>
-                <ModalExample />
-              </ResizablePanel>
-              <ResizableHandle />
-              <ResizablePanel defaultSize={60}>
-                <FormExample />
-              </ResizablePanel>
-            </ResizablePanelGroup>
-          </ResizablePanel>
-        </ResizablePanelGroup>
+      <div className="flex w-full gap-5">
+        <div className="flex-1">
+          <TableExample />
+        </div>
+        <div className="flex flex-1 flex-col gap-5">
+          <div className="flex-1">
+            <ModalExample />
+          </div>
+          <div className="flex-1">
+            <FormExample />
+          </div>
+        </div>
       </div>
     </div>
   );

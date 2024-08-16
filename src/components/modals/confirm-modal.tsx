@@ -1,6 +1,6 @@
 import NiceModal, { useModal } from '@ebay/nice-modal-react';
 
-import { Button } from '../ui';
+import { Button } from '../ui/button';
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from '../ui/dialog';
 
 interface ConfirmModalProps {
