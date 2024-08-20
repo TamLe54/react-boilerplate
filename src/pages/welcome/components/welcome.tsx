@@ -3,13 +3,14 @@ import { t } from 'i18next';
 import TechsoftLogo from '/techsoft.ico';
 import LucideLogo from '@/assets/logos/lucide.svg';
 import ReactHookFormLogo from '@/assets/logos/react-hook-form.svg';
-import ShadcnLogo from '@/assets/logos/shadcn.png';
+import ShadcnLogo from '@/assets/logos/shadcn-dark.png';
 import TailwindCssLogo from '@/assets/logos/tailwindcss.svg';
 import TanstackLogo from '@/assets/logos/tanstack.png';
 import ViteLogo from '@/assets/logos/vite.svg';
 import VitestLogo from '@/assets/logos/vitest.png';
 import ZustandLogo from '@/assets/logos/zustand.svg';
 import ReactLogo from '@/assets/react.svg';
+import { ModeToggle } from '@/components';
 
 import { ModalExample } from './modal-example';
 import { ToolLogo } from './tools-logo';
@@ -47,6 +48,9 @@ export const WelcomePage = () => {
         </div>
       </div>
       <ModalExample />
+      <div className="fixed right-4 top-2">
+        <ModeToggle />
+      </div>
     </div>
   );
 };
