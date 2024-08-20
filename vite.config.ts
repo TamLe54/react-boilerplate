@@ -19,6 +19,7 @@ export default defineConfig({
     coverage: {
       provider: 'istanbul',
       include: ['src/components/**/*', 'src/hooks/**/*', 'src/utils/**/*', 'src/pages/**/*', 'src/contexts/**/*'],
+      exclude: ['src/**/*.d.ts', 'src/**/*.test.{ts,tsx}', 'src/components/ui/**/*'],
     },
   },
 });

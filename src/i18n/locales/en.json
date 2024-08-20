@@ -4,5 +4,55 @@
       "title": "Counter Store",
       "up_button": "One Up"
     }
+  },
+  "pages": {
+    "welcome": {
+      "title": "Techsoft Reactjs Boilerplate",
+      "modal_example": {
+        "confirm_modal": {
+          "title": "Confirm Modal",
+          "description": "Are you sure want to continue?",
+          "subtitle": "This is a confirm modal"
+        }
+      }
+    }
+  },
+  "common": {
+    "tools": {
+      "vite": {
+        "name": "vite"
+      },
+      "vitest": {
+        "name": "vitest"
+      },
+      "tanstack": {
+        "name": "tanstack"
+      },
+      "reactjs": {
+        "name": "reactjs"
+      },
+      "shadcn": {
+        "name": "shadcn/ui"
+      },
+      "tailwindcss": {
+        "name": "tailwindcss"
+      },
+      "zustand": {
+        "name": "zustand"
+      },
+      "react-hook-form": {
+        "name": "react-hook-form"
+      },
+      "lucide": {
+        "name": "lucide"
+      }
+    },
+    "": {
+      "ok": "OK"
+    },
+    "cancel": "Cancel",
+    "ok": "OK",
+    "yes": "Yes",
+    "no": "No"
   }
 }

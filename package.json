@@ -26,7 +26,12 @@
   },
   "dependencies": {
     "@ebay/nice-modal-react": "^1.2.13",
+    "@hookform/resolvers": "^3.9.0",
+    "@radix-ui/react-aspect-ratio": "^1.1.0",
+    "@radix-ui/react-dialog": "^1.1.1",
+    "@radix-ui/react-label": "^2.1.0",
     "@radix-ui/react-slot": "^1.1.0",
+    "@radix-ui/react-tooltip": "^1.1.2",
     "@tanstack/react-query": "^5.51.23",
     "@tanstack/react-router": "^1.47.1",
     "@tanstack/react-table": "^8.20.1",
@@ -36,6 +41,7 @@
     "axios": "^1.7.3",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "dayjs": "^1.11.12",
     "happy-dom": "^14.12.3",
     "i18next": "^23.12.3",
     "lucide-react": "^0.427.0",
@@ -45,6 +51,7 @@
     "react-dom": "^18.3.1",
     "react-hook-form": "^7.52.2",
     "react-i18next": "^15.0.1",
+    "react-resizable-panels": "^2.0.23",
     "react-toastify": "^10.0.5",
     "zod": "^3.23.8",
     "zustand": "^4.5.4"

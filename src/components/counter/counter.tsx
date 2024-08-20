@@ -2,7 +2,7 @@ import { t } from 'i18next';
 
 import { useCounterStore } from '@/contexts/counter';
 
-import { Button } from '../ui';
+import { Button } from '../ui/button';
 
 export const Counter = () => {
   const { count, inc } = useCounterStore();

@@ -13,5 +13,6 @@
   "i18n-ally.annotationDelimiter": "·",
   "i18n-ally.theme.annotation": "rgba(100, 100, 100, .8)",
   "prettier.jsxSingleQuote": true,
-  "typescript.tsdk": "node_modules\\typescript\\lib"
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "cSpell.words": ["hookform", "lucide", "reactjs", "shadcn", "techsoft"]
 }
