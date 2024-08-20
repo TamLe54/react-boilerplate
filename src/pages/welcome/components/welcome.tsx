@@ -11,9 +11,7 @@ import VitestLogo from '@/assets/logos/vitest.png';
 import ZustandLogo from '@/assets/logos/zustand.svg';
 import ReactLogo from '@/assets/react.svg';
 
-import { FormExample } from './form-example';
 import { ModalExample } from './modal-example';
-import { TableExample } from './table-example';
 import { ToolLogo } from './tools-logo';
 
 export const WelcomePage = () => {
@@ -48,19 +46,7 @@ export const WelcomePage = () => {
           />
         </div>
       </div>
-      <div className="flex w-full gap-5">
-        <div className="flex-1">
-          <TableExample />
-        </div>
-        <div className="flex flex-1 flex-col gap-5">
-          <div className="flex-1">
-            <ModalExample />
-          </div>
-          <div className="flex-1">
-            <FormExample />
-          </div>
-        </div>
-      </div>
+      <ModalExample />
     </div>
   );
 };

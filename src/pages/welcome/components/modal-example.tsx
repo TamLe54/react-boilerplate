@@ -1,6 +1,6 @@
 import NiceModal from '@ebay/nice-modal-react';
 import { t } from 'i18next';
-import { ChevronDown, ChevronUp } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 import { ConfirmModal } from '@/components/modals/confirm-modal';
 import { Button } from '@/components/ui/button';
@@ -20,15 +20,15 @@ export const ModalExample = () => {
   };
 
   return (
-    <div className="flex w-full items-center justify-center gap-10 p-5">
+    <div className="flex w-full flex-col items-center justify-center gap-5 p-5">
       <Button onClick={handleOnclick}>{t('pages.welcome.modal_example.confirm_modal.title')}</Button>
-      <div className="flex flex-col items-center gap-2">
-        <Button size="sm" variant="outline" onClick={inc}>
-          <ChevronUp />
+      <div className="flex items-center gap-2">
+        <Button size="sm" variant="outline" onClick={dec}>
+          <ChevronLeft />
         </Button>
         <span className="px-2 text-2xl">{count}</span>
-        <Button size="sm" variant="outline" onClick={dec}>
-          <ChevronDown />
+        <Button size="sm" variant="outline" onClick={inc}>
+          <ChevronRight />
         </Button>
       </div>
     </div>
